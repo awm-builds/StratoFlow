@@ -1,0 +1,6 @@
+@StratoFlow.API_HostAddress = http://localhost:5105
+
+GET {{StratoFlow.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

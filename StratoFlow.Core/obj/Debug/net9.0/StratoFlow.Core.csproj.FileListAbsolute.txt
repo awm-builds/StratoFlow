@@ -1,0 +1,11 @@
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\bin\Debug\net9.0\StratoFlow.Core.deps.json
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\bin\Debug\net9.0\StratoFlow.Core.dll
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\bin\Debug\net9.0\StratoFlow.Core.pdb
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\StratoFlow.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\StratoFlow.Core.AssemblyInfoInputs.cache
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\StratoFlow.Core.AssemblyInfo.cs
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\StratoFlow.Core.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\StratoFlow.Core.dll
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\refint\StratoFlow.Core.dll
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\StratoFlow.Core.pdb
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net9.0\ref\StratoFlow.Core.dll
