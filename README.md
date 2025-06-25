@@ -68,22 +68,15 @@ This project was initially developed on .NET 9 and has been migrated to .NET 8 t
 
 ```
 StratoFlow/
-├── StratoFlow.API/          # Web API project
-│   ├── Controllers/         # API controllers
+├── StratoFlow.API/         # Web API project
+│   ├── Controllers/        # API controllers
 │   ├── Program.cs          # Application entry point
 │   └── appsettings.json    # Configuration
-├── StratoFlow.Core/         # Core business logic
+├── StratoFlow.Core/        # Core business logic
 │   └── Models/             # Domain models
 └── StratoFlow.sln          # Solution file
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
 ## License
 
-This project is proprietary software.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
