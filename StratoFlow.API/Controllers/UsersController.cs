@@ -1,14 +1,18 @@
+// StratoFlow.API/Controllers/UsersController.cs
 using Microsoft.AspNetCore.Mvc;
-
-namespace StratoFlow.API.Controllers;
+using StratoFlow.Core.Models;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class UsersController : ControllerBase
 {
     [HttpGet]
-    public ActionResult<string> Get()
+    public ActionResult<IEnumerable<User>> Get()
     {
-        return Ok("Users endpoint is working!");
+        return Ok(new[]
+        {
+            new User { Id = Guid.NewGuid(), Username = "admin", Role = "Admin" },
+            new User { Id = Guid.NewGuid(), Username = "jane.doe", Role = "User" }
+        });
     }
 }
