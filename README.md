@@ -14,11 +14,12 @@ StratoFlow is a RESTful API application that provides user management functional
 ## Features
 
 - RESTful API endpoints
-- User management system
+- User management system with role-based access
+- Three distinct user roles: Admin, User, and Guest
 - Swagger/OpenAPI documentation
 - Clean architecture with separation of concerns
 - Built on .NET 8 framework (migrated from .NET 9 for enhanced stability and LTS support)
-
+- Demo-ready with predefined user accounts for different scenarios
 ## Getting Started
 
 ### Prerequisites
@@ -47,8 +48,17 @@ When running in development mode, Swagger UI is available at `/swagger` for inte
 
 ## API Endpoints
 
-- `GET /api/users` - Retrieve user list
-- Additional endpoints as the application grows
+### User Management
+- `GET /api/users` - Retrieve all users
+- `GET /api/users/{id}` - Get specific user by ID  
+- `GET /api/users/username/{username}` - Get user by username
+- `GET /api/users/role/{role}` - Get users filtered by role (Admin, User, Guest)
+- `GET /api/users/demo-credentials` - Get demo account information
+
+### Demo User Roles
+- **Admin** (`admin`) - Full system access for testing and maintenance
+- **User** (`jsmith`) - Standard user credentials for project demonstrations  
+- **Guest** (`guest`) - Limited access for hiring managers to explore the application
 
 ## Technology Stack
 
