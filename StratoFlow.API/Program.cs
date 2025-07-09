@@ -6,6 +6,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
+// Register demo services
+builder.Services.AddScoped<StratoFlow.Core.Services.IDemoUserService, StratoFlow.Core.Services.DemoUserService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
