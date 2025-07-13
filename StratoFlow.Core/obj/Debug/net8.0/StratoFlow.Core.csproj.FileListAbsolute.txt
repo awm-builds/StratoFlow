@@ -10,3 +10,6 @@ C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net8.0\StratoFl
 C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net8.0\refint\StratoFlow.Core.dll
 C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net8.0\StratoFlow.Core.pdb
 C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net8.0\ref\StratoFlow.Core.dll
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\bin\Debug\net8.0\StratoFlow.Core.runtimeconfig.json
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net8.0\StratoFlow.Core.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.Core\obj\Debug\net8.0\StratoFlow.Core.genruntimeconfig.cache

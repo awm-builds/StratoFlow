@@ -1,0 +1,16 @@
+﻿services:
+  postgres:
+    image: postgres:17
+    container_name: stratoflow-postgres
+    environment:
+      POSTGRES_DB: stratoflow
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: StartUpDbFlair1!!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
