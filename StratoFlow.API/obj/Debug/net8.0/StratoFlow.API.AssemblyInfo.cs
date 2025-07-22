@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StratoFlow.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4f36f22240b8c2f4a3b6a244b1480fcb0b5f352")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7580dc22325f2a6defda518735d52571e59e0deb")]
 [assembly: System.Reflection.AssemblyProductAttribute("StratoFlow.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StratoFlow.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
