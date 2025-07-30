@@ -1,7 +1,10 @@
 // StratoFlow.API/Controllers/UsersController.cs
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using StratoFlow.Core.Models;
 using StratoFlow.Core.Services;
+using StratoFlow.Core.DTOs;
+using StratoFlow.Core.Data;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -87,4 +90,26 @@ public class UsersController : ControllerBase
             Instructions = "Use these credentials to explore different access levels in the StratoFlow system"
         });
     }
+
+    [HttpPost]
+    public async Task<ActionResult<User>> CreateUser(CreateUserDto userDto)
+    {
+        // Input Validation
+        var user = new User
+        {
+            Id = Guid.NewGuid(),
+            Username = userDto.Username,
+            Email = userDto.Email,
+            FirstName = userDto.FirstName,
+            LastName = userDto.LastName,
+            Role = userDto.Role,
+            CreatedAt = DateTime.UtcNow,
+            LastLoginAt = DateTime.UtcNow,
+        };
+
+        var createdUser = _userService.CreateUser(user);
+
+        return CreatedAtAction(nameof(GetUserById), new { id = user.Id}, user);
+    }
+
 }

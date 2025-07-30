@@ -110,5 +110,36 @@ namespace StratoFlow.Core.Services
         {
             return _demoUsers.Where(u => u.Role == role).OrderBy(u => u.Username);
         }
+
+        public User CreateUser(User user)
+        {
+            // Add new user
+            _demoUsers.Add(user);
+            return user;
+        }
+
+        public User? UpdateUser(Guid id, User user)
+        {
+            var existingUser = _demoUsers.FirstOrDefault(u => u.Id == id);
+            if (existingUser == null) return null;
+
+            existingUser.Username = user.Username;
+            existingUser.Email = user.Email;
+            existingUser.FirstName = user.FirstName;
+            existingUser.LastName = user.LastName;
+            existingUser.Role = user.Role;
+            existingUser.LastLoginAt = DateTime.UtcNow;
+
+            return existingUser;
+        }
+
+        public bool DeleteUser(Guid id)
+        {
+            var user = _demoUsers.FirstOrDefault(u => u.Id == id);
+            if (user == null) return false;
+
+            _demoUsers.Remove(user);
+            return true;
+        }
     }
 }
