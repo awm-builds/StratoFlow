@@ -94,7 +94,9 @@ public class UsersController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<User>> CreateUser(CreateUserDto userDto)
     {
-        // Input Validation
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
         var user = new User
         {
             Id = Guid.NewGuid(),
@@ -105,11 +107,47 @@ public class UsersController : ControllerBase
             Role = userDto.Role,
             CreatedAt = DateTime.UtcNow,
             LastLoginAt = DateTime.UtcNow,
+            IsActive = true
         };
 
         var createdUser = _userService.CreateUser(user);
-
-        return CreatedAtAction(nameof(GetUserById), new { id = user.Id}, user);
+        return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, createdUser);
     }
 
+
+    [HttpPut("{id:guid}")]
+    public async Task<IActionResult> UpdateUser(Guid id, UpdateUserDto userDto)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        // Convert DTO to User model
+        var user = new User
+        {
+            Id = id,  // Use the ID from the route
+            Username = userDto.Username,
+            Email = userDto.Email,
+            FirstName = userDto.FirstName,
+            LastName = userDto.LastName,
+            Role = userDto.Role,
+            LastLoginAt = DateTime.UtcNow  // Set update timestamp
+            // Don't set CreatedAt, LastLoginAt, IsActive here - let the service handle these
+        };
+
+        var updatedUser = _userService.UpdateUser(id, user);  // Now passing User object
+        if (updatedUser == null)
+            return NotFound($"User with ID {id} not found.");
+
+        return Ok(updatedUser);
+    }
+
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> DeleteUser(Guid id)
+    {
+        var deleted = _userService.DeleteUser(id);
+        if (!deleted)
+            return NotFound($"User with ID {id} not found.");
+
+        return NoContent();
+    }
 }

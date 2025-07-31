@@ -109,3 +109,7 @@ C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\refint\St
 C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\StratoFlow.API.pdb
 C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\StratoFlow.API.genruntimeconfig.cache
 C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\ref\StratoFlow.API.dll
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\andre\source\repos\StratoFlow\StratoFlow.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
